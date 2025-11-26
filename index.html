@@ -38,18 +38,6 @@
       overflow-x: hidden;
     }
 
-    /* Logo gigantesque en arrière-plan */
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background: url("logo-cuir-et-fantaisies.png") center/55% no-repeat;
-      opacity: 0.08;
-      mix-blend-mode: soft-light;
-      pointer-events: none;
-      z-index: -1;
-    }
-
     a {
       color: inherit;
       text-decoration: none;
@@ -94,15 +82,8 @@
 
     .logo {
       display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .logo-img {
-      height: 64px;
-      width: auto;
-      object-fit: contain;
-      filter: drop-shadow(0 4px 10px rgba(0,0,0,0.7));
+      flex-direction: column;
+      gap: 0.15rem;
     }
 
     .logo-text-main {
@@ -724,15 +705,6 @@
     .footer-links a { opacity: 0.85; }
     .footer-links a:hover { opacity: 1; }
 
-    /* Photo du donjon */
-    .donjon-photo {
-      margin-top: 1.6rem;
-      border-radius: 24px;
-      overflow: hidden;
-      border: 1px solid rgba(148,163,184,0.45);
-      box-shadow: 0 22px 45px rgba(0,0,0,0.7);
-    }
-
     @media (max-width: 960px) {
       .hero-grid {
         grid-template-columns: minmax(0, 1fr);
@@ -801,11 +773,8 @@
       <div class="container">
         <nav class="nav">
           <div class="logo">
-            <img src="logo-cuir-et-fantaisies.png" alt="Logo Cuir et Fantaisies" class="logo-img">
-            <div>
-              <div class="logo-text-main">Cuir et Fantaisies</div>
-              <div class="logo-text-sub">Donjon privé BDSM – Laurentides</div>
-            </div>
+            <div class="logo-text-main">Cuir et Fantaisies</div>
+            <div class="logo-text-sub">Donjon privé BDSM – Laurentides</div>
           </div>
 
           <div class="nav-links" id="nav-links">
@@ -943,11 +912,6 @@
                 <span class="about-badge">Respect & consentement</span>
               </div>
             </div>
-          </div>
-
-          <!-- PHOTO DU DONJON -->
-          <div class="donjon-photo">
-            <img src="donjon-cuir-et-fantaisies.jpg" alt="Vue du donjon Cuir et Fantaisies, pièce sombre équipée de mobilier de contention et éclairée aux chandelles.">
           </div>
         </div>
       </section>
@@ -1210,7 +1174,7 @@
 
           <div class="contact-grid">
             <div class="contact-card">
-              <form class="contact-form" method="post" action="mailto:velourslanieres@gmail.com" enctype="text/plain">
+              <form class="contact-form" method="post" action="mailto:cuiretfantaisies@gmail.com" enctype="text/plain">
                 <div class="field">
                   <label for="name">Nom ou pseudonyme</label>
                   <input id="name" name="name" type="text" placeholder="Votre nom ou pseudonyme" required>
@@ -1236,7 +1200,11 @@
             <div class="contact-side">
               <p class="contact-line">
                 <strong>Courriel :</strong><br>
-                <a href="mailto:velourslanieres@gmail.com">velourslanieres@gmail.com</a>
+                <a href="mailto:cuiretfantaisies@gmail.com">cuiretfantaisies@gmail.com</a>
+              </p>
+              <p class="contact-line">
+                <strong>Téléphone :</strong><br>
+                <a href="tel:15143179079">514-317-9079</a>
               </p>
               <p class="contact-line">
                 <strong>Région :</strong><br>
