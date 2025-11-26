@@ -721,6 +721,18 @@
       gap: 0.8rem;
     }
 
+    .footer-links a { opacity: 0.85; }
+    .footer-links a:hover { opacity: 1; }
+
+    /* Photo du donjon */
+    .donjon-photo {
+      margin-top: 1.6rem;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(148,163,184,0.45);
+      box-shadow: 0 22px 45px rgba(0,0,0,0.7);
+    }
+
     @media (max-width: 960px) {
       .hero-grid {
         grid-template-columns: minmax(0, 1fr);
@@ -931,6 +943,11 @@
                 <span class="about-badge">Respect & consentement</span>
               </div>
             </div>
+          </div>
+
+          <!-- PHOTO DU DONJON -->
+          <div class="donjon-photo">
+            <img src="donjon-cuir-et-fantaisies.jpg" alt="Vue du donjon Cuir et Fantaisies, pièce sombre équipée de mobilier de contention et éclairée aux chandelles.">
           </div>
         </div>
       </section>
